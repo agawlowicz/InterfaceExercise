@@ -17,13 +17,11 @@ namespace InterfaceExercise
         public string Logo { get; set; }
         public string Slogan { get; set; }
 
-        public void PrintCompanyInfo()
-        {
-            Console.WriteLine($"This SUV's company has the following logo and slogan: {Logo}, {Slogan}");
-        }
-
+        // Can implement properties from IVehicle, ICompany, and this current class SUV
         public void PrintVehicleInfo()
         {
+            Console.WriteLine($"This SUV's company has the following logo and slogan: {Logo}, {Slogan}");
+
             Console.WriteLine($"This SUV has {NumberOfDoors} doors, {NumberOfWheels} wheels, " +
                 $"and a capacity of {PeopleCapacity} people.");
 

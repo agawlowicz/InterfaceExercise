@@ -7,23 +7,25 @@ namespace InterfaceExercise
         {
         }
 
+        //Specific to Car class
         public bool HasTrunk { get; set; }
         public bool HasSunroof { get; set; }
 
+        //From IVehicle
         public int NumberOfDoors { get; set; }
         public int PeopleCapacity { get; set; }
         public int NumberOfWheels { get; set; }
         public bool IsAutomatic { get; set; }
+
+        //From ICompany
         public string Logo { get; set; }
         public string Slogan { get; set; }
 
-        public void PrintCompanyInfo()
-        {
-            Console.WriteLine($"This car's company has the following logo and slogan: {Logo}, {Slogan}");
-        }
-
+        //Print Car properties to Console
         public void PrintVehicleInfo()
         {
+            Console.WriteLine($"This car's company has the following logo and slogan: {Logo}, {Slogan}");
+
             Console.WriteLine($"This car has {NumberOfDoors} doors, {NumberOfWheels} wheels, " +
                 $"and a capacity of {PeopleCapacity} people.");
 

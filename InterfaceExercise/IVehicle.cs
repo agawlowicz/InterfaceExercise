@@ -1,9 +1,9 @@
 ﻿using System;
 namespace InterfaceExercise
 {
-    public interface IVehicle
+    public interface IVehicle //all memebers of interface are automatically abstract
     {
-        public int NumberOfDoors { get; set; }
+        public int NumberOfDoors { get; set; } //can't set default values
 
         public int PeopleCapacity { get; set; }
 

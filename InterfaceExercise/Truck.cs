@@ -17,13 +17,10 @@ namespace InterfaceExercise
         public string Logo { get; set; }
         public string Slogan { get; set; }
 
-        public void PrintCompanyInfo()
-        {
-            Console.WriteLine($"This truck's company has the following logo and slogan: {Logo}, {Slogan}");
-        }
-
         public void PrintVehicleInfo()
         {
+            Console.WriteLine($"This truck's company has the following logo and slogan: {Logo}, {Slogan}");
+
             Console.WriteLine($"This truck has {NumberOfDoors} doors, {NumberOfWheels} wheels, " +
                 $"and a capacity of {PeopleCapacity} people.");
 

@@ -7,6 +7,5 @@ namespace InterfaceExercise
 
         public string Slogan { get; set; }
 
-        public void PrintCompanyInfo();
     }
 }
